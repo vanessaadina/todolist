@@ -1,18 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head></head>
 
-    <body>
-        <script src="index.js"></script>
-        <div id="d">
-            <h1>To Do List</h1>
-        </div>
-        <!-- onclick="checkInput()" -->
-        <input id="userInput" type="text" > 
-        <button id="addButton" type="button" onclick="addTask()">+</button>
+<html>
+  <head>
+    <!-- Contains metadata - data about html (not displayed) -->
+    <title>To Do List</title>
+  </head>
+
+  <body>
+    <!-- Link to an external js file -->
+    <script src="index.js"></script>
+
+    <!-- Link to an external css file -->
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <header>
+      <h1>To Do List</h1>
+    </header>
+
+    <section>
+      <article>
+        <input id="userInput" type="text" />
+        <button id="addBtn" type="button" onclick="addTask()">+</button>
+      </article>
+
+      <nav>
         <ul id="taskList"></ul>
-        <p id="task"></p>
-    </body>
+      </nav>
+    </section>
     
-</html> 
+    <!-- <footer>End</footer> -->
+  </body>
 </html>
